@@ -15,8 +15,8 @@ export default function BioCardSection() {
       <CardHeader>
         <Sparkles className="w-8 h-8 text-yellow-500 mb-2" />
         <CardTitle className="text-2xl text-black">
-          Sachinthya Rathnavibushana Full-Stack Software Engineer & MSc IT
-          Candidate
+          Sachinthya Rathnavibushana Full-Stack Software Engineer & MSc IT -
+          Reading
         </CardTitle>
         <CardDescription className="text-gray-600">
           Crafting scalable, enterprise-grade solutions with a passion for

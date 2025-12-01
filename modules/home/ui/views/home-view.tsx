@@ -51,10 +51,10 @@ export default function HomeView() {
           {/* Right Column */}
           <div className="space-y-6">
             <HowIWork />
-            <DesignerBookmarks />
+            {/* <DesignerBookmarks /> */}
             <UnsplashCard />
             <MusicalPause />
-            <Recommendations />
+            {/* <Recommendations /> */}
             <ThankYouCard />
           </div>
         </div>

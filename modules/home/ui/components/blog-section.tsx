@@ -12,10 +12,22 @@ import { ChevronRight } from "lucide-react";
 
 export default function BlogSection() {
   const blogPosts = [
-    { title: "Design System", subtitle: "What it is and what it's for" },
-    { title: "Usability Testing", subtitle: "Why it's necessary" },
-    { title: "Crafting Landing Page", subtitle: "From idea to realization" },
-    { title: "Dark Mode", subtitle: "Dark mode on the site" },
+    {
+      title: "Spring Boot Microservices",
+      subtitle: "Architecting scalable backend systems.",
+    },
+    {
+      title: "React & State Management",
+      subtitle: "Building dynamic and responsive user interfaces.",
+    },
+    {
+      title: "From Electronics to Software Engineering",
+      subtitle: "My journey and the synergies between the two fields.",
+    },
+    {
+      title: "The Full-Stack Mindset",
+      subtitle: "A holistic approach to project development.",
+    },
   ];
 
   return (
@@ -26,11 +38,11 @@ export default function BlogSection() {
             Blog
           </Badge>
           <CardTitle className="text-2xl text-gray-900">
-            My Thoughts, Ideas and Updates
+            My Thoughts, Ideas & Updates
           </CardTitle>
           <CardDescription className="text-gray-800">
-            Here you'll find a treasure trove of articles filled with ideas,
-            inspiration, tips, design processes and more.
+            Here you’ll find a collection of articles on software development,
+            emerging technologies, and insights from my projects.
           </CardDescription>
         </CardHeader>
       </Card>
@@ -46,7 +58,7 @@ export default function BlogSection() {
                 <h3 className="font-semibold">{post.title}</h3>
                 <p className="text-sm text-gray-500">{post.subtitle}</p>
               </div>
-              <ChevronRight className="w-5 h-5 text-gray-400" />
+              {/* <ChevronRight className="w-5 h-5 text-gray-400" /> */}
             </div>
           ))}
         </CardContent>

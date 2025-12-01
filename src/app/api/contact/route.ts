@@ -1,19 +1,13 @@
-// app/api/contact/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
-  console.log("🔵 API route called via POST");
-
   try {
     const body = await request.json();
-    console.log("📨 Form data received:", body);
-
     const { name, email, message } = body;
 
     // Validate required fields
     if (!name || !email || !message) {
-      console.log("❌ Missing required fields");
       return NextResponse.json(
         {
           error:
@@ -32,22 +26,17 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log("✅ Validation passed");
-
     // Check if environment variables are set
     if (
       !process.env.SMTP_HOST ||
       !process.env.SMTP_USER ||
       !process.env.SMTP_PASS
     ) {
-      console.error("❌ Missing SMTP environment variables");
       return NextResponse.json(
         { error: "Email service not configured" },
         { status: 500 }
       );
     }
-
-    console.log("📧 Attempting to send email...");
 
     // Create email transporter
     const transporter = nodemailer.createTransport({
@@ -62,7 +51,6 @@ export async function POST(request: NextRequest) {
 
     // Verify connection configuration
     await transporter.verify();
-    console.log("✅ SMTP connection verified");
 
     const toEmail = process.env.TO_EMAIL || "ssrathnavibushana@gmail.com";
     const fromEmail = process.env.FROM_EMAIL || process.env.SMTP_USER;
