@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Header from "@/modules/home/ui/components/header";
 import BioCardSection from "../components/bio-card-section";
 import ShopSection from "../components/shop-section";
 import BlogSection from "../components/blog-section";
@@ -17,8 +16,9 @@ import UnsplashCard from "../components/unplash-card";
 import MusicalPause from "../components/musical-pause";
 import Recommendations from "../components/recommendations";
 import ThankYouCard from "../components/thank-you-card";
+import Header from "../components/header";
 
-export default function Home() {
+export default function HomeView() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
