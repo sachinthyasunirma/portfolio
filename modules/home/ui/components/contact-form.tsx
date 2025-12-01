@@ -24,6 +24,9 @@ export default function ContactForm() {
     e.preventDefault();
     setLoading(true);
     setResult(null);
+
+    console.log("🟡 Form submitted with data:", formData);
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -31,14 +34,31 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
+      console.log("🟡 Response status:", res.status);
+      console.log(
+        "🟡 Response headers:",
+        Object.fromEntries(res.headers.entries())
+      );
+
       if (res.ok) {
+        const data = await res.json();
+        console.log("✅ Success response:", data);
         setResult("Message sent — thanks!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        const body = await res.json();
-        setResult(`Error: ${body?.error ?? "Failed to send message"}`);
+        console.log("❌ Error response status:", res.status);
+        // Try to get error message from response
+        try {
+          const errorData = await res.json();
+          console.log("❌ Error response data:", errorData);
+          setResult(`Error: ${errorData?.error ?? "Failed to send message"}`);
+        } catch (parseError) {
+          console.log("❌ Could not parse error response");
+          setResult(`Error: HTTP ${res.status} - ${res.statusText}`);
+        }
       }
     } catch (err: any) {
+      console.error("❌ Network error:", err);
       setResult(`Error: ${err?.message ?? "Network error"}`);
     } finally {
       setLoading(false);
