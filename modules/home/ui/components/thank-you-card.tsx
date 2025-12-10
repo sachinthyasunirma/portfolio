@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export default function ThankYouCard() {
@@ -17,7 +16,7 @@ export default function ThankYouCard() {
           </p>
           <div className="border-t border-gray-200 pt-4 mt-4">
             <p className="text-xs text-gray-500 mb-2">
-              © Design by Nikita Ermilov • 2024
+              © Design by Sachinthya R. • 2025
             </p>
             <Button
               variant="link"
@@ -28,15 +27,6 @@ export default function ThankYouCard() {
           </div>
         </CardContent>
       </Card>
-
-      <div className="text-center py-4">
-        <Badge
-          variant="outline"
-          className="text-xs text-gray-500 border-gray-300 bg-white"
-        >
-          🔨 Made in Framer
-        </Badge>
-      </div>
     </>
   );
 }

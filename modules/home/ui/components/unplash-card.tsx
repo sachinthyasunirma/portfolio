@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function UnsplashCard() {
   return (
-    <Card className="overflow-hidden shadow-lg border-0">
+    <Card className="overflow-hidden shadow-lg border-0 py-0!">
       <CardContent className="p-0">
         <div className="relative h-64">
           <Image

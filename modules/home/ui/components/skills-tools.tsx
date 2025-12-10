@@ -24,12 +24,16 @@ const SKILLS = [
   "UX Design",
   "Mentoring",
   "User Testing",
-  "No-Code",
+  "ReactJs",
+  "NextJs",
+  "Java",
+  "NodeJs",
+  "Spring Boot",
+  "Microservices",
   "Usability Testing",
   "Leadership",
   "UI Design",
   "Web Design",
-  "Workshops",
 ];
 
 /** Rectangle overlap detection */

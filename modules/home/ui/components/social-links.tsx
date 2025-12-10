@@ -7,7 +7,7 @@ export default function SocialLinks() {
   const socialLinks = [
     {
       name: "GitHub",
-      username: "/nikita-ermilov",
+      username: "/sachinthyasunirma",
       icon: <Github className="w-5 h-5" />,
       bg: "bg-white",
       border: "border border-gray-200",
@@ -16,28 +16,28 @@ export default function SocialLinks() {
       buttonText: "Repo",
       link: "https://github.com/sachinthyasunirma",
     },
-    {
-      name: "Twitter",
-      username: "@nikita_uiux",
-      icon: <Twitter className="w-5 h-5" />,
-      bg: "bg-white",
-      border: "border border-gray-200",
-      buttonClass:
-        "bg-black text-white hover:bg-gray-800 flex items-center justify-between w-full",
-      buttonText: "Follow",
-      link: "https://github.com/sachinthyasunirma",
-    },
-    {
-      name: "Instagram",
-      username: "@nikita.ermilov",
-      icon: <Instagram className="w-6 h-6 text-orange-500" />,
-      bg: "bg-orange-50",
-      border: "border border-orange-100",
-      buttonClass:
-        "bg-orange-500 text-white hover:bg-orange-600 flex items-center justify-between w-full",
-      buttonText: "Follow",
-      link: "https://github.com/sachinthyasunirma",
-    },
+    // {
+    //   name: "Twitter",
+    //   username: "@nikita_uiux",
+    //   icon: <Twitter className="w-5 h-5" />,
+    //   bg: "bg-white",
+    //   border: "border border-gray-200",
+    //   buttonClass:
+    //     "bg-black text-white hover:bg-gray-800 flex items-center justify-between w-full",
+    //   buttonText: "Follow",
+    //   link: "https://github.com/sachinthyasunirma",
+    // },
+    // {
+    //   name: "Instagram",
+    //   username: "@nikita.ermilov",
+    //   icon: <Instagram className="w-6 h-6 text-orange-500" />,
+    //   bg: "bg-orange-50",
+    //   border: "border border-orange-100",
+    //   buttonClass:
+    //     "bg-orange-500 text-white hover:bg-orange-600 flex items-center justify-between w-full",
+    //   buttonText: "Follow",
+    //   link: "https://github.com/sachinthyasunirma",
+    // },
     {
       name: "LinkedIn",
       username: "/sachinthya",

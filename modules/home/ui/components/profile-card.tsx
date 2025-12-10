@@ -4,12 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function ProfileCard() {
   return (
-    <Card className="bg-gradient-to-br from-pink-400 via-rose-400 to-pink-300 text-white border-0 shadow-2xl overflow-hidden rounded-3xl">
+    <Card className="bg-gradient-to-br from-pink-400 via-rose-400 to-pink-300 text-white border-0 shadow-2xl overflow-hidden rounded-3xl py-0!">
       <CardContent className="p-0 relative">
         {/* Full Card Image Background */}
         <div className="relative h-96">
           <Image
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop"
+            src="/images/profileImage.jpeg"
             alt="Profile"
             fill
             className="object-cover"

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 import {
   Card,
   CardContent,
@@ -10,6 +13,8 @@ import { Badge } from "@/components/ui/badge";
 import { ChevronRight } from "lucide-react";
 
 export default function MusicalPause() {
+  const router = useRouter();
+
   return (
     <Card className="shadow-lg">
       <CardHeader>
@@ -23,7 +28,10 @@ export default function MusicalPause() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg p-4 flex justify-between items-center cursor-pointer hover:shadow-md transition-all duration-200 group">
+        <div
+          onClick={() => router.push("https://music.apple.com/us/album/choosin-texas/1844932149?i=1844932150")}
+          className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg p-4 flex justify-between items-center cursor-pointer hover:shadow-md transition-all duration-200 group"
+        >
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center shadow-sm">
               <span className="text-white text-xl">🎵</span>
