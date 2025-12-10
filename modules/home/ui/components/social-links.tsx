@@ -77,10 +77,7 @@ export default function SocialLinks() {
                 className="block"
               >
                 <Button className={`${social.buttonClass} cursor-pointer`}>
-                  <span className="font-medium">
-                    {social.extra ? `${social.extra} ` : ""}
-                    {social.buttonText}
-                  </span>
+                  <span className="font-medium">{social.buttonText}</span>
                   <span className="text-lg">↗</span>
                 </Button>
               </a>
