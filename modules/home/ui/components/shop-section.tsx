@@ -50,7 +50,7 @@ export default function ShopSection() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Hotel Management System",
+      title: "Hotel Booking & Landing Page Design",
       description:
         "A comprehensive hotel booking and management platform with real-time availability, payment processing, and admin dashboard.",
       category: "Web Application",
